@@ -1,0 +1,219 @@
+city,Region,population,total_current_revenue,annual_direct_circulation
+Addison,Eastern,9545.0,112545.0,10138.0
+Ajax,Central,126666.0,7518149.0,782355.0
+Alliston,Central,44591.0,2438614.0,212479.0
+Almonte,Eastern,14740.0,797968.0,97582.0
+Amaranth,Central,4327.0,140952.0,0.0
+Angus,Central,22970.0,1092007.0,85848.0
+Apsley,Eastern,2877.0,362304.0,14337.0
+Arnprior,Eastern,9629.0,737081.0,111566.0
+Astorville,Northern,4946.0,229417.0,13478.0
+Atikokan,Northern,2642.0,359882.0,7596.0
+Aurora,Central,65970.0,4350989.0,444740.0
+Balmertown,Northern,4094.0,229769.0,6637.0
+Bancroft,Eastern,4065.0,282769.0,12699.0
+Barrie,Central,159521.0,10870940.0,804864.0
+Barry's Bay,Eastern,3927.0,225286.0,15206.0
+Beachburg,Eastern,5894.0,115376.0,13642.0
+Beamsville,Central,43911.0,2390423.0,401623.0
+Beaverton,Central,12567.0,822866.0,39838.0
+Belleville,Eastern,55071.0,2980633.0,329983.0
+Blind River,Northern,3422.0,248239.0,12162.0
+Bolton,Central,65247.0,7051842.0,292493.0
+Bonfield,Northern,2146.0,105602.0,9756.0
+Bowmanville,Central,110891.0,4337737.0,749163.0
+Bracebridge,Northern,17305.0,1743142.0,58055.0
+Bradford,Central,44125.0,3182259.0,223611.0
+Brampton,Central,708210.0,22903301.0,2420134.0
+Brantford,Western,104688.0,6051029.0,407239.0
+Bridgenorth,Eastern,18653.0,926267.0,95433.0
+Brighton,Eastern,12108.0,738092.0,60947.0
+Brockville,Eastern,22116.0,1369385.0,103293.0
+Buckhorn,Eastern,6439.0,350251.0,11694.0
+Burk's Falls,Northern,3161.0,224492.0,28011.0
+Burlington,Central,195764.0,12780981.0,1309728.0
+Calabogie,Eastern,2864.0,161719.0,13629.0
+Callander,Northern,3964.0,344311.0,14535.0
+Cambridge,Western,153290.0,8815622.0,628049.0
+Campbellford,Eastern,13861.0,684967.0,57187.0
+Carleton Place,Eastern,12500.0,820209.0,114434.0
+Casselman,Eastern,3970.0,188435.0,8759.0
+Chatham,Western,103988.0,5514226.0,644813.0
+Christian Island,Central,686.0,147136.0,816.0
+Clinton,Western,61366.0,4227947.0,289796.0
+Cobourg,Eastern,20519.0,1929613.0,155173.0
+Cochrane,Northern,3953.0,386480.0,32188.0
+Colborne,Eastern,7932.0,374867.0,35914.0
+Coldwater,Central,12248.0,317445.0,49583.0
+Collingwood,Central,24811.0,2102143.0,219139.0
+Cornwall,Eastern,66972.0,5592068.0,435262.0
+Deep River,Eastern,4175.0,611206.0,47734.0
+Deseronto,Eastern,1852.0,391499.0,4810.0
+Douro,Eastern,7632.0,173708.0,13486.0
+Dryden,Northern,7388.0,649927.0,30817.0
+Dunchurch,Northern,1075.0,149894.0,9859.0
+Dundalk,Western,8716.0,521329.0,21082.0
+Dunnville,Western,49206.0,2961025.0,209837.0
+Durham,Western,13131.0,600727.0,40693.0
+Dwight,Northern,3759.0,453269.0,45955.0
+Eganville,Eastern,7008.0,330166.0,21112.0
+Elgin,Eastern,10883.0,703804.0,47320.0
+Elk Lake,Northern,460.0,101883.0,1895.0
+Elliot Lake,Northern,11225.0,600165.0,31917.0
+Emo,Northern,1204.0,109639.0,5000.0
+Emsdale,Northern,2454.0,176977.0,6664.0
+Englehart,Northern,1442.0,101430.0,4108.0
+Espanola,Northern,5185.0,448583.0,18374.0
+Essex,Western,192970.0,6046121.0,496200.0
+Fergus,Western,107610.0,9038563.0,690091.0
+Flesherton,Western,10424.0,649275.0,65383.0
+Flinton,Eastern,1758.0,111869.0,5921.0
+Fort Erie,Central,32901.0,1762372.0,106683.0
+Fort Frances,Northern,7466.0,706585.0,40689.0
+Gananoque,Eastern,5383.0,271646.0,15195.0
+Garden Village,Northern,1031.0,131451.0,248.0
+Georgetown,Central,62951.0,4409660.0,344142.0
+Geraldton,Northern,4309.0,536904.0,8005.0
+Grafton,Eastern,7473.0,315136.0,11858.0
+Grand Valley,Central,3140.0,503247.0,40034.0
+Gravenhurst,Northern,13157.0,978042.0,67405.0
+Greater Sudbury,Northern,166004.0,10267703.0,484800.0
+Grimsby,Central,28883.0,1192940.0,154562.0
+Guelph,Western,144356.0,14512283.0,1869439.0
+Haliburton,Eastern,20581.0,1470118.0,81272.0
+Hamilton,Central,592000.0,37579923.0,2435516.0
+Hanover,Western,7967.0,740391.0,45214.0
+Havelock,Eastern,5083.0,126409.0,10274.0
+Hawkesbury,Eastern,10194.0,611326.0,23790.0
+Hearst,Northern,4794.0,320511.0,17270.0
+Holland Landing,Central,39000.0,2251223.0,161006.0
+Honey Harbour,Northern,3441.0,561928.0,12693.0
+Hornepayne,Northern,1050.0,149649.0,2385.0
+Huntsville,Northern,21147.0,1070560.0,118984.0
+Innisfil,Central,44561.0,4254481.0,182844.0
+Iroquois Falls,Northern,4535.0,216751.0,48728.0
+Kapuskasing,Northern,7092.0,204911.0,15584.0
+Keened,Eastern,7087.0,285681.0,25970.0
+Kemptville,Eastern,16451.0,635572.0,64631.0
+Kenora,Northern,14967.0,843662.0,48846.0
+Keswick,Central,50519.0,3927107.0,211852.0
+Killaloe,Eastern,2257.0,184432.0,13811.0
+King City,Central,29467.0,2362684.0,81553.0
+Kingston,Eastern,185900.0,8961058.0,941924.0
+Kirkland Lake,Northern,7981.0,404768.0,24241.0
+Kitchener,Western,292240.0,14212626.0,1268962.0
+Lanark,Eastern,5338.0,374725.0,19722.0
+Lansdowne,Eastern,9804.0,560734.0,34189.0
+Lefaivre,Eastern,9949.0,405235.0,21827.0
+Lindsay,Eastern,79247.0,2521804.0,296764.0
+Little Current On,Northern,2640.0,260548.0,9887.0
+London,Western,439385.0,25886988.0,2404067.0
+Madoc,Eastern,4801.0,210984.0,17229.0
+Manitouwadge,Northern,1974.0,123928.0,5346.0
+Marathon,Northern,3138.0,222754.0,8944.0
+Markham,Central,365051.0,18855170.0,3031444.0
+Marmora,Eastern,4267.0,130776.0,12019.0
+Massey,Northern,3237.0,265299.0,7714.0
+Maynooth,Eastern,4385.0,303403.0,18210.0
+Meaford,Western,11485.0,1160771.0,73269.0
+Merrickville,Eastern,3135.0,163490.0,21188.0
+Midhurst,Central,22489.0,1147830.0,92953.0
+Midland,Central,24353.0,2075151.0,141591.0
+Millbrook,Central,10016.0,458787.0,31054.0
+Milton,Central,142811.0,6238855.0,760978.0
+Milverton,Western,12595.0,432596.0,42069.0
+Mississauga,Central,796000.0,37102117.0,4417125.0
+Mitchell,Western,9038.0,456528.0,54715.0
+Monkton,Western,15538.0,1180809.0,127418.0
+Moonbeam,Northern,1231.0,177371.0,10002.0
+Murillo,Northern,6035.0,130804.0,22460.0
+Napanee,Eastern,45182.0,1719437.0,233106.0
+New Hamburg,Western,70690.0,3388930.0,261148.0
+Newmarket,Central,91670.0,3898770.0,453786.0
+Niagara Falls,Central,94415.0,6276813.0,377233.0
+Niagara-on-the-Lake,Central,19088.0,963518.0,64547.0
+Nipigon,Northern,1743.0,115044.0,5904.0
+Noelville,Northern,2828.0,222337.0,14354.0
+North Bay,Northern,52662.0,2842608.0,188480.0
+Norwood,Eastern,4658.0,217765.0,13292.0
+Oakville,Central,240000.0,12893419.0,1601236.0
+Ohsweken,Western,12795.0,650653.0,4294.0
+Orangeville,Central,30637.0,2465638.0,158029.0
+Orillia,Central,34412.0,3103130.0,310413.0
+Oshawa,Central,186375.0,10272781.0,761424.0
+Ottawa,Eastern,1083550.0,60187805.0,8205895.0
+Owen Sound,Western,39792.0,2043312.0,187203.0
+Paris,Western,39474.0,2765916.0,308916.0
+Parry Sound,Northern,6879.0,657647.0,44060.0
+Pembroke,Eastern,14364.0,998464.0,88773.0
+Penetanguishene,Central,10077.0,572561.0,57976.0
+Perkinsfield,Central,12966.0,205813.0,0.0
+Perth,Eastern,16758.0,923386.0,99065.0
+Petawawa,Eastern,18160.0,830940.0,96004.0
+Peterborough,Eastern,83651.0,5314764.0,324092.0
+Pickering,Central,105995.0,6966547.0,565983.0
+Picton,Eastern,25704.0,1915856.0,120573.0
+Port Carling,Northern,7652.0,511529.0,24057.0
+Port Colborne,Central,20033.0,1076411.0,71351.0
+Port Hope,Central,17294.0,1154748.0,105916.0
+Port Perry,Central,22430.0,976675.0,78325.0
+Powassan,Northern,6427.0,279299.0,17252.0
+Prescott,Eastern,4078.0,198799.0,13750.0
+Rama,Central,749.0,222950.0,2056.0
+Ramara,Central,10377.0,492839.0,26973.0
+Red Rock,Northern,895.0,124244.0,4020.0
+Renfrew,Eastern,8190.0,744039.0,47455.0
+Richmond Hill,Central,215018.0,11750779.0,1159140.0
+Rockland,Eastern,26505.0,1406579.0,114493.0
+Russell,Eastern,22630.0,978328.0,115795.0
+Sault Ste. Marie,Northern,78574.0,3804986.0,231676.0
+Schreiber,Northern,1039.0,132929.0,7212.0
+Seguin,Northern,5280.0,355325.0,11084.0
+Shannonville,Eastern,4538.0,241419.0,4403.0
+Shelburne,Central,8989.0,484421.0,48591.0
+Simcoe,Western,67490.0,3330920.0,140629.0
+Sioux Lookout,Northern,5840.0,414974.0,17639.0
+Smiths Falls,Eastern,9254.0,541804.0,28833.0
+Smithville,Central,15454.0,925052.0,49750.0
+South River,Northern,1876.0,110200.0,4270.0
+Southampton,Western,851.0,114931.0,600.0
+Spencerville,Eastern,7505.0,146039.0,14171.0
+St-Isidore,Eastern,13350.0,511333.0,44547.0
+St. Catharines,Central,136803.0,7237154.0,873143.0
+St. Marys,Western,7390.0,734104.0,70367.0
+St. Thomas,Western,51912.0,6368099.0,548916.0
+Stayner,Central,14814.0,930437.0,49224.0
+Stirling,Eastern,5015.0,247124.0,19825.0
+Stouffville,Central,37730.0,3082171.0,302243.0
+Stratford,Western,33232.0,3168450.0,297989.0
+Strathroy,Western,74094.0,6365560.0,286202.0
+Sturgeon Falls,Northern,12964.0,621031.0,37538.0
+Sundridge,Northern,2504.0,136418.0,11450.0
+Temagami,Northern,867.0,113879.0,1919.0
+Temiskaming Shores,Northern,9634.0,670075.0,37514.0
+Terrace Bay,Northern,1528.0,240465.0,11897.0
+Thessalon,Northern,1268.0,113669.0,4688.0
+Thornbury,Western,8794.0,1297818.0,54694.0
+Thorold,Central,23816.0,854511.0,64481.0
+Thunder Bay,Northern,108843.0,7718328.0,314291.0
+Timmins,Northern,41145.0,2372970.0,89011.0
+Toronto,Toronto,3110984.0,253476621.0,11595454.0
+Town of Saugeen Shores,Western,72017.0,5341456.0,368901.0
+Trenton,Eastern,46560.0,1921344.0,120469.0
+Tweed,Eastern,6067.0,209385.0,17675.0
+Uxbridge,Central,21410.0,975833.0,91638.0
+Vankleek Hill,Eastern,8665.0,284652.0,22380.0
+Vaughan,Central,344930.0,23220285.0,1302135.0
+Victoria Harbour,Central,8567.0,522363.0,46273.0
+Wainfleet,Central,6887.0,511992.0,45432.0
+Warren,Northern,2656.0,168260.0,8325.0
+Wasaga Beach,Central,24860.0,1940448.0,99104.0
+Waterloo,Western,155550.0,8823880.0,1204282.0
+Wawa,Northern,2705.0,297776.0,7553.0
+Welland,Central,55750.0,2867016.0,213196.0
+Whitby,Central,150700.0,7733792.0,817951.0
+Whitefish First Nation,Northern,434.0,145521.0,150.0
+Whitney,Eastern,1055.0,106111.0,7952.0
+Windsor,Western,234219.0,9202432.0,720746.0
+Woodstock,Western,100748.0,9145999.0,673128.0
+Wyoming,Western,128154.0,8967267.0,446013.0

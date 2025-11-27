@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>John Snow: the 1854 Cholera Outbreak</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        
+        <section id="scrolly" class="scrolly scene-video">
+            <div class="graphic">
+                
+                <div class="frame">
+                    <div class="frame-inner">
+                        <img class="map-img" src="images/Snow-cholera-map-1.jpg" alt="John Snow 1854 cholera map">
+                            <div class="scrim" aria-hidden="true"></div>
+                            <div class="smoke" aria-hidden="true"></div>
+                    </div>
+                    
+                    <!-- Banner inicial + Cientistas -->
+                    <div class="overlay overlay-1">
+                        <div class="banner">
+                            <p>In late summer 1854, the Soho district of London was struck by a sudden cholera outbreak that spread throughout August and early September, with cases concentrated around Broad Street. Within days, hundreds of deaths accumulated in the surrounding streets. For most physicians, the explanation seemed obvious: "miasma", air corrupted by filth, carried the disease through the alleys.</p>
+                        </div>
+                        
+                        <div class="scientists-scene">
+                            <img src="images/scientists_miasma.png" alt="Victorian scientists discussing miasma theory">
+                        </div>
+                    </div>
+                    
+                    <!-- Snow Theory -->
+                    <div class="overlay overlay-2">
+                        <div class="snow-theory-banner">
+                            <p>
+                            While nearly every British physician blamed ‘bad air’ from decomposing organic matter, Snow stood almost alone in arguing there was no correlation. Dismissed as ‘peculiar’ by London’s lead medical officer, he persisted—mapping deaths day by day to prove his theory...
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Learn more -->
+                    <div class="learn-more-wrapper">
+                        <div class="learn-more-container">
+                            <button class="learn-more-btn">Learn more about John Snow</button>
+                            
+                            <div class="bio-card">
+                                <div class="bio-content">
+                                    <div class="bio-text">
+                                        <h3>John Snow (1813-1858)</h3>
+                                        <p>
+                                        John Snow was born on March 15, 1813, in York, England, and died on June 16, 1858, in London, at the age of 45. From humble origins, Snow became a physician and excelled in both epidemiology and anesthesiology.
+                                        </p>
+                                        <a href="https://en.wikipedia.org/wiki/John_Snow" target="_blank" rel="noopener noreferrer" class="wiki-link">
+                                            Read more on Wikipedia →
+                                        </a>
+                                    </div>
+                                    <div class="bio-image">
+                                        <img src="images/john_snow.jpeg" alt="John Snow portrait">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="video-card">
+                        <video id="cholera-video" class="video-el" autoplay muted playsinline preload="auto">
+                            <source src="video_frames/cholera_v1.mp4" type="video/mp4" />
+                        </video>
+                        <button id="replay-btn" class="replay hidden" aria-label="Replay">Replay</button>
+                        <h3 class="video-title">Spatial Distribution of Deaths</h3>
+                        <div class="legend">
+                            <div class="legend-item">
+                                <span class="legend-box"></span>
+                                <span class="legend-text">x1 Death</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="map-caption">
+                        <p>As deaths accumulated, Snow interviewed families street by street, tracing each victim’s water source. He later visualized his findings in a revolutionary way. The first uses of spatial analysis to understand an epidemic...</p>
+                    </div>
+                    
+                    
+                    
+                    <div class="video-card-2">
+                        <video id="cholera-video-2" class="video-el" autoplay muted playsinline preload="auto">
+                            <source src="video_frames/cholera_v2.mp4" type="video/mp4" />
+                        </video>
+                        <button id="replay-pumps" class="replay hidden" aria-label="Replay">Replay</button>
+                        <h3 class="video-title">Proximity Analysis: Deaths & Water Pumps</h3>
+                        <div class="legend">
+                            <div class="legend-item">
+                                <span class="legend-box"></span>
+                                <span class="legend-text">x1 Death</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-caption-2">
+                        <p>Snow then mapped every public water pump across the district. By dividing the region into proximity zones, assigning each household to its nearest pump, a pattern emerged: a striking concentration of deaths around the Broad Street pump. </p>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="overlay-stats">
+                        <div class="stats-container-premium">
+                            
+                            <div class="stats-banner-full">
+                                <p>Snow's spatial analysis revealed an undeniable pattern: <strong>nearly 70% of all deaths</strong> were clustered around the Broad Street pump. He investigated every exception to the rule, including the brewery where no workers fell ill, because they drank beer and had their own well. His analysis led to a strong hypothesis: contaminated water, not miasma, was the problem.
+                            </div>
+                            <div class="stats-layout-asymmetric">
+                                <div class="chart-container-left">
+                                    <img src="images/deaths_pump.png" alt="Deaths by Water Pump" class="chart-img">
+                                </div>
+                                <div class="stats-right-column">
+                                    
+                                    <div class="stats-highlight-compact">
+                                        <div class="stat-number">98.8%</div>
+                                        <div class="stat-label">of all deaths occurred within<br>250 meters of Broad Street pump</div>
+                                    </div>
+                                    <div class="proximity-card-compact">
+                                        <h4 class="proximity-title">Distance from Broad Street Pump</h4>
+                                        <div class="proximity-bars">
+                                            <div class="prox-row">
+                                                <span class="prox-label">0-150 meters</span>
+                                                <div class="prox-bar-bg"><div class="prox-bar" style="width: 68.5%"></div></div>
+                                                <span class="prox-value">68.5%</span>
+                                            </div>
+                                            <div class="prox-row">
+                                                <span class="prox-label">150-250 meters</span>
+                                                <div class="prox-bar-bg"><div class="prox-bar" style="width: 30.3%"></div></div>
+                                                <span class="prox-value">30.3%</span>
+                                            </div>
+                                            <div class="prox-row">
+                                                <span class="prox-label">> 250 meters</span>
+                                                <div class="prox-bar-bg"><div class="prox-bar" style="width: 1.2%"></div></div>
+                                                <span class="prox-value">1.2%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="overlay-conclusion" >
+                        <div class="conclusion-container">
+                            <div class="conclusion-hero">
+                                <div class="hero-badge">September 8, 1854</div>
+                                <h2 class="hero-title">The Handle That Changed History</h2>
+                                <p class="hero-subtitle">After nine days of investigation, John Snow convinced St. James Parish Board to remove the Broad Street pump handle on September 8. Though the epidemic was already subsiding (many residents had fled), no new cases emerged near the pump. But Snow’s battle for acceptance had only just begun!</p>
+                            </div>
+                            <div class="conclusion-evidence">
+                                <div class="evidence-chart">
+                                    <div class="chart-marker">
+                                    </div>
+                                    <img src="images/deaths_timeline.png" alt="Deaths Timeline" class="timeline-img">
+                                </div>
+                                <div class="evidence-stats">
+                                    <div class="stat-box stat-red">
+                                        <div class="stat-num">127</div>
+                                        <div class="stat-text">deaths on Sept 2<br>(epidemic peak)</div>
+                                    </div>
+                                    <div class="stat-box stat-green">
+                                        <div class="stat-num">0</div>
+                                        <div class="stat-text">deaths by Sept 20<br>(12 days later)</div>
+                                    </div>
+                                    <div class="evidence-quote">
+                                        <p class="quote-mark">❝</p>
+                                        <p class="quote-body">Within <strong>less than six days</strong>, the most afflicted streets were deserted by more than <strong>three-quarters</strong> of their inhabitants.</p><p class="quote-mark">❝</p>
+                                        <p class="quote-cite">— John Snow, <em>On the Mode of Communication of Cholera</em> (1855)</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="conclusion-paradox">
+                                <h3 class="section-heading">The Paradox of Progress</h3>
+                                <div class="timeline-row">
+                                    <div class="timeline-card timeline-rejected">
+                                        <div class="timeline-year">1854–1858</div>
+                                        <div class="timeline-status">Rejected</div>
+                                        <p class="timeline-desc">Snow's germ theory was dismissed by Victorian medical establishment. Miasma theory—the belief that "bad air" caused disease—dominated. He died in 1858 without seeing his theory accepted.</p>
+                                    </div>
+                                    <div class="timeline-card timeline-vindicated">
+                                        <div class="timeline-year">1866</div>
+                                        <div class="timeline-status">Vindicated</div>
+                                        <p class="timeline-desc">London's final cholera outbreak struck areas not yet protected by new sewers. Snow's water contamination theory was finally proven correct—8 years after his death.</p>
+                                    </div>
+                                    <div class="timeline-card timeline-confirmed">
+                                        <div class="timeline-year">1884</div>
+                                        <div class="timeline-status">Confirmed</div>
+                                        <p class="timeline-desc">Robert Koch’s work on <em> Vibrio cholerae</em> (first isolated in 1854) finally confirmed Snow’s hypothesis: cholera was a microscopic organism in contaminated water.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="conclusion-footer">
+                                <p class="footer-text">The Broad Street pump handle remains one of history's most powerful symbols: <strong>a single intervention, informed by spatial data, that saved many lives</strong>.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="title">
+                    <h1>
+                        <span class="title-main">John Snow</span>
+                        <span class="title-sub">the 1854 cholera outbreak</span>
+                    </h1>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <div class="step" data-step="1"></div>
+                <div class="step" data-step="2"></div>
+                <div class="step" data-step="3"></div>
+                <div class="step" id="step-video" data-step="4"></div>
+                <div class="step" id="step-video-2" data-step="5"></div>
+                <div class="step" data-step="6" id="step-stats"></div>
+                <div class="step" data-step="7" id="step-conclusion"></div>
+            </div>
+        </section>
+        
+        <script src="js/intersection-observer.js"></script>
+        <script src="js/scrollama.min.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>

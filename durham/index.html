@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Durham's Job Market: Three Students Navigate Change</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HERO SECTION (Full screen intro) -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">The Essence of Change</h1>
+            <p class="hero-subtitle">How artificial intelligence is reshaping Durham region's job market</p>
+            <div class="hero-byline">
+                <p>By Thu Trang Bach, Thu Tra Truong, and Vitor H Messias</p>
+                <p class="hero-date">November 2025</p>
+            </div>
+            <div class="scroll-indicator">
+                <p>Scroll to explore ↓</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--
+    <section id="transition-david">
+      <div class="prose-transition">
+        <video
+          src="images/video_map.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          style="width: 100%; height: 100%; border-radius: 0px;">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+    </section>
+    -->
+    
+    <!-- NOVA CENA DE INTRODUÇÃO -->
+    <section id="intro-dialogue">
+        <div class="intro-sticky-viz">
+            <div class="intro-background">
+            
+            <div class="intro-text-overlay">
+                <div class="text-content">
+                    <p class="dropcap">
+                        Four generations, one Job Fair. Outside the Business and IT
+                        building at Ontario Tech University, the excitement of a new
+                        career collides with a silent threat: a job market already
+                        rewritten by AI.
+                    </p>
+                </div>
+            </div>
+            </div>
+            
+            <div id="intro-banner" class="intro-prop">
+                <img src="images/job_fair_banner_text_only.png" alt="Job Fair Banner">
+            </div>
+            
+            <!-- Personagens -->
+            <div class="intro-character" id="intro-david">
+                <img src="images/david.png" alt="David Brown">
+                    <div class="intro-bubble-track">
+                        <span class="intro-bubble"></span>
+                        <span class="intro-bubble"></span>
+                    </div>
+                <div class="intro-speech" data-dialogue="1">
+                    <span class="intro-speech-main">
+                        Hello, I’m David, nice to meet you. I’m here to find a new job.
+                    </span>
+                    <span class="intro-speech-sub">
+                        David Brown, 46, a tech expert at Bell, and he was recently laid off due to the company's implementation of a new technology and brand, Ateko.
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-character" id="intro-lucas">
+                <img src="images/lucas.png" alt="Lucas Kai">
+                    <div class="intro-bubble-track">
+                        <span class="intro-bubble"></span>
+                        <span class="intro-bubble"></span>
+                    </div>
+
+                    
+                <div class="intro-speech" data-dialogue="2">
+                    <span class="intro-speech-main">
+                        Hi Marcus, David, I’m Lucas. I’m back to studying for my Master's degree and trying to navigate the job market here in Canada.
+
+                    </span>
+                    <span class="intro-speech-sub">
+                        Lucas Kai, 33, international student from Italy, background in Computer Science.
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-character" id="intro-marcus">
+                <img src="images/marcus.png" alt="Marcus Thompson">
+                    
+                    <div class="intro-bubble-track">
+                        <span class="intro-bubble"></span>
+                        <span class="intro-bubble"></span>
+                    </div>
+
+                    
+                    
+                <div class="intro-speech" data-dialogue="0">
+                    <span class="intro-speech-main">
+                        Hi, I’m Marcus, I graduated last year and I am now pursuing a Master’s degree.
+                    </span>
+                    <span class="intro-speech-sub">
+                        Marcus Thompson, 23, recent graduate from Durham College.
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-character" id="intro-priya">
+                <img src="images/priya.png" alt="Priya Sharma">
+                    <div class="intro-bubble-track">
+                        <span class="intro-bubble"></span>
+                        <span class="intro-bubble"></span>
+                    </div>
+
+                    
+                <div class="intro-speech" data-dialogue="3">
+                    <span class="intro-speech-main">
+                        Hello all! I’m Priya and I am attending the fair to connect with potential candidates for our upcoming projects.
+                    </span>
+                    <span class="intro-speech-sub">
+                        Priya Sharma, 24, Senior HR Manager at TD Bank.
+                    </span>
+                </div>
+            </div>
+            
+            <div class="" id="intro-priya">
+                <div class="intro-speech" data-dialogue="4">
+                </div>
+            </div>
+   
+        </div>
+        <!-- Os "passos" que ativam as falas -->
+        <article class="intro-steps">
+            <div class="step-intro" data-step-dialogue="0"></div>
+            <div class="step-intro" data-step-dialogue="1"></div>
+            <div class="step-intro" data-step-dialogue="2"></div>
+            <div class="step-intro" data-step-dialogue="3"></div>
+            <div class="step-intro" data-step-dialogue="4"></div>
+        </article>
+
+    </section>
+
+    <!-- UNEMPLOYMENT DATA -->
+    <section id="scrolly-unemployment" class="scrolly-section">
+      <article>
+        <!-- STEP 0: O Passado Estável -->
+        <div class="step">
+          <h3>A Fractured Market</h3>
+          <p>
+            In 2019, the gap between youth and established workers was manageable.
+            Everyone played by the same rules.
+          </p>
+        </div>
+
+        <!-- STEP 1: O Choque (Animação do Gap) -->
+        <div class="step">
+          <h3>The Great Divergence</h3>
+          <p>
+            Then came the split. While automation and the pandemic barely scratched established careers,
+            <strong>youth unemployment skyrocketed</strong>, exposing the jobs most vulnerable to AI.
+          </p>
+        </div>
+
+        <!-- STEP 2: O Abismo Atual (David) -->
+        <div class="step">
+          <h3>Left Behind</h3>
+          <p>
+            Today, nearly <strong>1 in 4 young people</strong> cannot find work.
+            David’s layoff thrusts him from the safety of the blue line directly into this hostile red reality.
+          </p>
+        </div>
+      </article>
+      <div class="sticky-viz">
+          <div class="flourish-embed flourish-heatmap" data-src="visualisation/26384237"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26384237/thumbnail" width="100%" alt="heatmap visualization" /></noscript></div>
+      </div>
+    </section>
+
+    
+    <!-- ==================== MARCUS SCENE: TOP OCCUPATIONS ==================== -->
+    <section id="scrolly-occupations">
+      <article>
+          <div class="step">
+            <h3>As a matter of fact, lots of jobs have been replaced by AI</h3>
+            <p>
+              While David's story is dramatic, it's just one of many. In Durham Region,
+              entire occupations have already been automated away, leaving workers scrambling to retrain.
+            </p>
+          </div>
+
+          <div class="step">
+            <h3>Marcus's Dilemma</h3>
+            <p>
+              Marcus graduated from his undergraduate program only to discover his major—
+              computer programming—has been rendered half-obsolete by AI. Now he's forced into
+              a Master's program just to stay competitive.
+            </p>
+          </div>
+
+          <div class="step">
+            <h3>The Automation Wave</h3>
+            <p>
+              These aren't new jobs disappearing slowly. They're vanishing fast. The occupations
+              most exposed to AI replacement are those requiring routine, codifiable skills—
+              exactly the entry-level work new graduates depend on.
+            </p>
+          </div>
+      </article>
+      <div class="sticky-viz">
+          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26385185"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26385185/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+      </div>
+    </section>
+
+    
+    <section id="ai-opportunities-viz">
+      <div class="viz-header">
+        <h2>But every revolution creates its own stars.</h2>
+        <p>With the disruption of AI, a new galaxy of opportunities is born.</p>
+      </div>
+      
+      <div class="viz-container">
+        <!-- COLUNA 1: Editorial (Esquerda) -->
+        <div class="viz-col-left">
+           <div class="editorial-content">
+               <p class="editorial-title">Net Growth of Emerging Careers (2025–2030)</p>
+               <p class="editorial-source">
+                   Source: World Economic Forum, Future of Jobs Report 2025
+               </p>
+           </div>
+        </div>
+
+        <!-- COLUNA 2: Gráfico (Centro) -->
+        <div class="viz-col-center" id="viz-ai-jobs"></div>
+
+        <!-- COLUNA 3: Lucas (Direita) -->
+        <div class="viz-col-right">
+            <div class="lucas-text-container">
+                <p class="dropcap">
+                    For Lucas, a decade of engineering experience wasn't a shield against disruption—it was a vantage point.
+                    Seeing the industry shift, he realized that mastering AI was a survival strategy.
+                    <span style="color: #4db6ac; font-weight: 600;">He pivoted from traditional manufacturing to the forefront of the robotics revolution.</span>
+                </p>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CENA 6: PRIYA & SKILLS ==================== -->
+    <section id="priya-advice-scene">
+        <!-- Lado Esquerdo: Priya & Contexto -->
+        <div class="priya-container">
+            <div class="priya-profile">
+                <div class="priya-avatar" style="background-color: #8e44ad;"></div>
+                <div class="priya-info">
+                    <h3>Priya Sharma</h3>
+                    <p>Senior HR Manager, TD Bank</p>
+                </div>
+            </div>
+            
+            <div class="priya-dialogue">
+                <p>
+                    The fear is real. I see it in every interview. Candidates ask,
+                    <em>"Will this role exist in five years?"</em>
+                </p>
+                <p>
+                    "But here's the truth: We aren't looking for people who can beat AI.
+                    We're looking for people who can <strong>orchestrate</strong> it.
+                    The top skills we hire for today didn't even exist on job descriptions a decade ago."
+                </p>
+            </div>
+        </div>
+        
+        <div class="sticky-viz">
+           
+           
+           <div class="flourish-embed flourish-scatter" data-src="visualisation/26436728"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26436728/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+        </div>
+
+
+    </section>
+
+    <!-- ==================== CENA 7: CONCLUSÃO (O MANIFESTO) ==================== -->
+    <section id="conclusion-scene">
+
+
+        
+        <div class="conclusion-content">
+            
+            <!-- Passo 1 -->
+            <div class="conc-step step-1">
+                <h2>The future isn't written by AI.</h2>
+            </div>
+
+            <!-- Passo 2 -->
+            <div class="conc-step step-2">
+                <h2>It's written by <span class="highlight-human">YOU.</span></h2>
+            </div>
+
+            <!-- Passo 3 -->
+            <div class="conc-step step-3">
+                <div class="takeaway-grid">
+                    <div class="t-card">
+                        <h3>Human Connection</h3>
+                        <p>Empathy cannot be automated.</p>
+                    </div>
+                    <div class="t-card">
+                        <h3>Embrace Curiosity</h3>
+                        <p>AI answers questions. Humans ask them.</p>
+                    </div>
+                    <div class="t-card">
+                        <h3>Adaptability is King</h3>
+                        <p>The only stability is your ability to learn.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Passo 4 -->
+            <div class="conc-step step-4">
+                <br /><footer>
+                    <p>Data Sources: Statistics Canada, Durham Workforce Report and Google Trends.</p>
+                </footer>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Scripts na ordem correta -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/visualizations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

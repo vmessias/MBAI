@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rethinking Library Metrics in Ontario | Vitor Messias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libraries-dashboard.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Course project · Data dashboard</p>
+        <h1 class="hero-title">Rethinking Library Metrics in Ontario</h1>
+        <p class="hero-deck">
+          A dashboard concept built on 25 years of public library statistics — more than 9,800 records across 200+ municipalities — to compare funding and use with normalized KPIs instead of misleading raw totals.
+        </p>
+      </div>
+      <aside class="hero-meta">
+        <p><span>Dataset</span>1999–2024 Ontario public library statistics, 142–336 variables per year.</p>
+        <p><span>Focus</span>Equity, funding intensity, and usage patterns across regions and time.</p>
+        <p><span>Role</span>Data cleaning, EDA, dashboard layout and interaction design.</p>
+      </aside>
+    </header>
+
+    <!-- SECTION: DATA CHALLENGE -->
+    <section class="section">
+      <header class="section-head">
+        <h2>The data challenge</h2>
+        <span class="section-tag">Why a dashboard?</span>
+      </header>
+      <div class="section-body two-col">
+        <p>
+          The raw dataset is almost complete in terms of missing values, but extremely skewed: in some metrics the mean is tens of times larger than the median, driven by outliers like Toronto, which makes traditional averages hide most libraries.
+        </p>
+        <p>
+          Column names and definitions also change over time — there is effectively 0% column overlap between 2006 and 2024 — so any 25‑year view first requires reconciling schemas and re‑defining stable KPIs before visualization.
+        </p>
+      </div>
+    </section>
+
+    <!-- DASHBOARD LAYOUT -->
+    <section class="section">
+      <header class="section-head">
+        <h2>Dashboard concept</h2>
+        <span class="section-tag">One view, four questions</span>
+      </header>
+
+      <div class="dash-layout">
+        <!-- LEFT: FILTERS & KPIs -->
+        <aside class="dash-sidebar">
+          <div class="panel panel-filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+              <label>Year</label>
+              <div class="pill-row">
+                <span class="pill pill-active">2024</span>
+                <span class="pill">2019</span>
+                <span class="pill">2014</span>
+                <span class="pill">1999</span>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label>Region</label>
+              <div class="pill-row">
+                <span class="pill pill-active">All</span>
+                <span class="pill">Central</span>
+                <span class="pill">Eastern</span>
+                <span class="pill">Northern</span>
+                <span class="pill">Western</span>
+                <span class="pill">Toronto</span>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label>Population band</label>
+              <div class="pill-row">
+                <span class="pill pill-active">&gt; 5k</span>
+                <span class="pill">5k–50k</span>
+                <span class="pill">50k–250k</span>
+                <span class="pill">&gt; 250k</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-kpis">
+            <h3>Normalized KPIs</h3>
+            <div class="kpi">
+              <span class="kpi-label">Revenue per capita</span>
+              <span class="kpi-value">$59</span>
+              <span class="kpi-note">Ontario average, 2024.</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">Top outlier</span>
+              <span class="kpi-value">Thornbury</span>
+              <span class="kpi-note">Revenue per capita ≈ 2.5× the provincial average.</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">Circulation per resident</span>
+              <span class="kpi-value">↓ vs 1999</span>
+              <span class="kpi-note">Traditional loans at a multi‑decade low despite higher funding.</span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- RIGHT: MAIN VIEWS -->
+        <div class="dash-main">
+
+          <!-- VIEW 1: FUNDING VS POPULATION -->
+          <section class="view view-scatter">
+            <header class="view-head">
+              <h3>Funding vs population</h3>
+              <p>Scatterplot showing the “Toronto effect” and regional clusters. Hovering a point reveals system name, population, total revenue, and revenue per capita.</p>
+            </header>
+            <div class="view-body">
+              <div id="viz-funding-scatter" class="viz-placeholder">
+                <span>Scatter · Population × Total current revenue</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- VIEW 2: REVENUE PER CAPITA RANKING -->
+          <section class="view view-bar">
+            <header class="view-head">
+              <h3>Who is funded above average?</h3>
+              <p>Ranked bar chart of revenue per capita, filtered by population band, highlighting systems that receive far more (or less) than the provincial norm.</p>
+            </header>
+            <div class="view-body">
+              <div id="viz-revenue-ranking" class="viz-placeholder">
+                <span>Bars · Revenue per capita (Top 15)</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- VIEW 3: 25-YEAR INDEX -->
+          <section class="view view-index">
+            <header class="view-head">
+              <h3>25 years of change</h3>
+              <p>Index line chart (1999 = 100) comparing the trajectories of revenue, population, and traditional circulation to show how money and use have drifted apart.</p>
+            </header>
+            <div class="view-body">
+              <div id="viz-index-lines" class="viz-placeholder">
+                <span>Index lines · Revenue, circulation, population</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- VIEW 4: WHEN MEAN LIES -->
+          <section class="view view-dot">
+            <header class="view-head">
+              <h3>When the mean lies</h3>
+              <p>Dot plot showing how far the mean sits above the median for key metrics; values are expressed as “× median” to emphasize skewness.</p>
+            </header>
+            <div class="view-body">
+              <div id="viz-metrics-gap" class="viz-placeholder">
+                <span>Dots · Mean ÷ Median (×)</span>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: DESIGN RATIONALE -->
+    <section class="section">
+      <header class="section-head">
+        <h2>Design rationale</h2>
+      </header>
+      <div class="section-body two-col">
+        <p>
+          The layout separates controls and normalized KPIs on the left from visual views on the right, encouraging readers to think in terms of per‑resident investment rather than raw totals. A single conceptual filter state controls all views, so funding, equity, and long‑term trends stay in sync.
+        </p>
+        <p>
+          Each visualization encodes one of the main EDA findings: skewness and outliers (scatter), hidden leaders when we normalize by population (ranking), the divergence between rising funding and shrinking physical circulation (index chart), and the extent to which the mean can misrepresent typical libraries (gap plot).
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        Back to portfolio · <a href="../index.html#projects">Featured projects</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/libraries-dashboard.js"></script>
+</body>
+</html>

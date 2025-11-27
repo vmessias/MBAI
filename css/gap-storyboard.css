@@ -1,0 +1,257 @@
+/* GLOBAL */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F4F5FA;
+  color: #101320;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.7;
+}
+
+.story-page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 3rem 6vw 3.5rem;
+}
+
+/* ==================== CROSS-BROWSER FIXES ==================== */
+.story-title {
+  font-size: 2.6rem;
+  font-size: clamp(2.4rem, 3.1vw, 2.8rem);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* HERO */
+
+.story-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(220px, 1.4fr);
+  gap: 2.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #D5D9E7;
+}
+
+.story-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 0.68rem;
+  color: #8A92A6;
+  margin: 0 0 0.6rem 0;
+}
+
+.story-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 3.1vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+}
+
+.story-deck {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #2B3245;
+  max-width: 38rem;
+}
+
+.story-meta {
+  font-size: 0.8rem;
+  color: #555D72;
+  align-self: flex-start;
+}
+
+.story-meta p {
+  margin: 0 0 0.5rem 0;
+}
+
+.story-meta span {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: #9AA1B7;
+}
+
+
+/* TOP-LEVEL SECTIONS */
+
+.story-section {
+  margin-top: 2.8rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.section-head h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.section-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #8A92A6;
+}
+
+.section-body p {
+  margin: 0 0 0.7rem 0;
+  font-size: 0.94rem;
+  color: #2C3444;
+}
+
+
+/* SCENES LIST */
+
+.scene-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.scene {
+  padding: 1.6rem 1.8rem 1.8rem;
+  border-radius: 1.1rem;
+  background: #FFFFFF;
+  border: 1px solid #D7DCEE;
+  box-shadow: 0 12px 30px rgba(8, 12, 40, 0.04);
+}
+
+.scene-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.scene-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1C3F76;
+  line-height: 1;
+}
+
+.scene-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  margin: 0 0 0.1rem 0;
+}
+
+.scene-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: #8A92A6;
+}
+
+.scene-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(260px, 1.4fr);
+  gap: 1.8rem;
+}
+
+.scene-text p {
+  margin: 0 0 0.7rem 0;
+  font-size: 0.9rem;
+  color: #23293A;
+}
+
+.scene-note {
+  font-weight: 500;
+}
+
+.scene-voice strong,
+.scene-takeaway strong,
+.scene-design strong {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: #6C7691;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.scene-visual {
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+}
+
+.visual-placeholder {
+  border-radius: 0.9rem;
+  border: 1px dashed #C4CADC;
+  background: linear-gradient(135deg, #F7F8FC 0%, #F1F3FB 100%);
+  color: #9AA1B7;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  text-align: center;
+  min-height: 220px; 
+}
+
+
+/* FOOTER */
+
+.story-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #D7DCEE;
+  font-size: 0.82rem;
+  color: #4B5060;
+}
+
+.story-footer a {
+  color: #1C3F76;
+  text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .story-hero {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .story-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.6rem;
+  }
+
+  .scene-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scene {
+    padding: 1.3rem 1.2rem 1.4rem;
+  }
+}
