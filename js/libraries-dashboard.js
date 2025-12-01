@@ -313,12 +313,11 @@ function renderCostIndex(cost, state) {
     .text(`${lastPoint.cost_index_2002_100.toFixed(0)}`);
 }
 
-/* VIEW 4: Segment trends - COM LEGENDA FIXA 2x2 */
+/* VIEW 4: Segment trends */
 function renderSegmentTrends(segTrends, state) {
   const container = d3.select("#viz-metrics-gap");
   container.selectAll("*").remove();
 
-  // Aumentei top margin para caber as 2 linhas de legenda
   const margin = { top: 50, right: 40, bottom: 50, left: 70 };
   const width = container.node().getBoundingClientRect().width - margin.left - margin.right;
   const height = 350 - margin.top - margin.bottom;
@@ -368,9 +367,8 @@ function renderSegmentTrends(segTrends, state) {
     .attr("transform", `translate(0, -35)`); 
 
   segments.forEach((cat, i) => {
-    // Calcula posição: 2 itens por linha
-    const colIndex = i % 2;       // 0 ou 1 (coluna)
-    const rowIndex = Math.floor(i / 2); // 0 ou 1 (linha)
+    const colIndex = i % 2;       
+    const rowIndex = Math.floor(i / 2); 
     
     const xPos = colIndex * 140;  // Distância horizontal entre colunas
     const yPos = rowIndex * 16;   // Distância vertical entre linhas
@@ -379,14 +377,14 @@ function renderSegmentTrends(segTrends, state) {
       .attr("transform", `translate(${xPos}, ${yPos})`); 
 
     item.append("circle")
-      .attr("r", 3.5) // Reduzido
+      .attr("r", 3.5) 
       .attr("fill", COLORS.segments[cat]);
 
     item.append("text")
       .attr("x", 8)
       .attr("y", 4)
       .style("fill", "#D1D5DB")
-      .style("font-size", "9px") // Fonte menor
+      .style("font-size", "9px") 
       .style("font-weight", "600")
       .text(cat.toUpperCase());
   });
