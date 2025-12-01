@@ -272,9 +272,10 @@ function renderCostIndex(cost, state) {
   // Ajuste: Anotação do pico COVID
   const peak = cost.reduce((a, b) => a.cost_index_2002_100 > b.cost_index_2002_100 ? a : b);
   svg.append("text")
-    .attr("x", xScale(peak.year) + 8)
+    .attr("x", xScale(peak.year) -10)
     .attr("y", yScale(peak.cost_index_2002_100))
     .attr("fill", COLORS.red)
+    .attr("text-anchor", "end") 
     .style("font-size", "11px")
     .style("font-weight", "bold")
     .text(`COVID Shock: ${peak.cost_index_2002_100.toFixed(0)}x`);
