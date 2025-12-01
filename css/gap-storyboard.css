@@ -1,4 +1,6 @@
-/* GLOBAL */
+/* ========= GAP STORYBOARD – EDITORIAL ========= */
+
+/* Base */
 
 *,
 *::before,
@@ -9,22 +11,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F4F5FA;
+  background: radial-gradient(circle at top left, #FDF7F2 0%, #F4ECE5 32%, #E2E6F5 80%);
   color: #101320;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
-}
-
-.story-page {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 3rem 6vw 3.5rem;
-}
-
-/* ==================== CROSS-BROWSER FIXES ==================== */
-.story-title {
-  font-size: 2.6rem;
-  font-size: clamp(2.4rem, 3.1vw, 2.8rem);
 }
 
 html {
@@ -33,20 +23,41 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Page shell */
 
-/* HERO */
+.story-page {
+  max-width: 1120px;
+  margin: 2.5rem auto 3.5rem;
+  padding: 2.8rem 3.3rem 3.2rem;
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.96) 0%, rgba(249,251,255,0.98) 40%, rgba(242,244,252,1) 100%);
+  border-radius: 32px;
+  box-shadow:
+    0 30px 90px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(255,255,255,0.8);
+  position: relative;
+}
+
+.story-page::before {
+  content: "";
+  position: absolute;
+  inset: 20px 26px auto auto;
+  border-top: 1px solid rgba(148, 163, 184, 0.38);
+}
+
+/* Hero */
 
 .story-hero {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(220px, 1.4fr);
-  gap: 2.8rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #D5D9E7;
+  grid-template-columns: minmax(0, 3fr) minmax(230px, 1.3fr);
+  gap: 2.6rem;
+  padding-bottom: 2.3rem;
+  border-bottom: 1px solid #D4DAE8;
 }
 
 .story-eyebrow {
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: .22em;
   font-size: 0.68rem;
   color: #8A92A6;
   margin: 0 0 0.6rem 0;
@@ -55,26 +66,31 @@ html {
 .story-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: clamp(2.4rem, 3.1vw, 2.8rem);
-  line-height: 1.1;
-  margin: 0 0 1rem 0;
+  font-size: clamp(2.6rem, 3.4vw, 3rem);
+  line-height: 1.06;
+  margin: 0 0 1.1rem 0;
 }
 
 .story-deck {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 1rem;
   color: #2B3245;
-  max-width: 38rem;
+  max-width: 40rem;
 }
 
 .story-meta {
   font-size: 0.8rem;
   color: #555D72;
   align-self: flex-start;
+  padding: 1rem 1.3rem;
+  border-radius: 1.2rem;
+  background: linear-gradient(145deg, #111827 0%, #1F2937 100%);
+  color: #E5E7EB;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.5);
 }
 
 .story-meta p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.65rem 0;
 }
 
 .story-meta span {
@@ -82,14 +98,13 @@ html {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: .18em;
-  color: #9AA1B7;
+  color: #9CA3AF;
 }
 
-
-/* TOP-LEVEL SECTIONS */
+/* Top sections */
 
 .story-section {
-  margin-top: 2.8rem;
+  margin-top: 3rem;
 }
 
 .section-head {
@@ -101,7 +116,7 @@ html {
 
 .section-head h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   margin: 0;
 }
 
@@ -114,12 +129,83 @@ html {
 
 .section-body p {
   margin: 0 0 0.7rem 0;
-  font-size: 0.94rem;
+  font-size: 0.96rem;
   color: #2C3444;
 }
 
+/* Layout: scenes + rail */
 
-/* SCENES LIST */
+.story-scenes-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(180px, 1.2fr);
+  gap: 2.6rem;
+  margin-top: 2.2rem;
+  align-items: flex-start;
+}
+
+/* Timeline rail */
+
+.story-rail {
+  position: sticky;
+  top: 2.5rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: #6B7280;
+}
+
+.story-rail-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #111827;
+}
+
+.story-rail-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.story-rail-list::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  bottom: 4px;
+  width: 1px;
+  background: linear-gradient(180deg, #CBD5F5 0%, #9CA3C7 100%);
+}
+
+.story-rail-item {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.story-rail-item::before {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #E5E7EB;
+  border: 1px solid #9CA3C7;
+}
+
+.story-rail-item span {
+  display: block;
+}
+
+.story-rail-item strong {
+  font-size: 0.72rem;
+  color: #111827;
+}
+
+/* Scenes list */
 
 .scene-list {
   list-style: none;
@@ -127,50 +213,76 @@ html {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 2.3rem;
+  gap: 2.4rem;
 }
 
 .scene {
-  padding: 1.6rem 1.8rem 1.8rem;
-  border-radius: 1.1rem;
-  background: #FFFFFF;
-  border: 1px solid #D7DCEE;
-  box-shadow: 0 12px 30px rgba(8, 12, 40, 0.04);
+  padding: 1.8rem 2rem 2rem;
+  border-radius: 1.4rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, #F7F8FD 60%, #EFF1FB 100%);
+  border: 1px solid rgba(203, 213, 225, 0.9);
+  box-shadow: 0 20px 46px rgba(15, 23, 42, 0.12);
+  position: relative;
+  overflow: hidden;
 }
+
+.scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(248, 250, 252, 0.6) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+/* Scene header */
 
 .scene-header {
   display: flex;
   align-items: baseline;
   gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
 }
 
 .scene-number {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 600;
-  color: #1C3F76;
+  color: #111827;
   line-height: 1;
+  position: relative;
+}
+
+.scene-number::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 22px;
+  height: 2px;
+  background: linear-gradient(90deg, #6366F1, #EC4899);
 }
 
 .scene-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.25rem;
-  margin: 0 0 0.1rem 0;
+  font-size: 1.3rem;
+  margin: 0 0 0.12rem 0;
 }
 
 .scene-kicker {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .18em;
-  color: #8A92A6;
+  color: #6B7280;
 }
+
+/* Scene body */
 
 .scene-grid {
   display: grid;
-  grid-template-columns: minmax(0, 2.1fr) minmax(260px, 1.4fr);
-  gap: 1.8rem;
+  grid-template-columns: minmax(0, 2.2fr) minmax(260px, 1.4fr);
+  gap: 1.9rem;
+  align-items: stretch;
 }
 
 .scene-text p {
@@ -191,8 +303,10 @@ html {
   letter-spacing: .16em;
   color: #6C7691;
   display: block;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.12rem;
 }
+
+/* Visual frames */
 
 .scene-visual {
   align-self: stretch;
@@ -201,26 +315,34 @@ html {
 }
 
 .visual-placeholder {
-  border-radius: 0.9rem;
-  border: 1px dashed #C4CADC;
-  background: linear-gradient(135deg, #F7F8FC 0%, #F1F3FB 100%);
-  color: #9AA1B7;
+  flex: 1;
+  border-radius: 1rem;
+  border: 1px solid #CBD5F5;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(129, 140, 248, 0.06) 0,
+      rgba(129, 140, 248, 0.06) 6px,
+      rgba(249, 250, 251, 0.7) 6px,
+      rgba(249, 250, 251, 0.7) 12px
+    );
+  color: #4B5563;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: .16em;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.2rem;
+  padding: 1.3rem;
   text-align: center;
-  min-height: 220px; 
+  min-height: 220px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.75);
 }
 
-
-/* FOOTER */
+/* Footer */
 
 .story-footer {
-  margin-top: 3rem;
+  margin-top: 3.2rem;
   padding-top: 1rem;
   border-top: 1px solid #D7DCEE;
   font-size: 0.82rem;
@@ -232,26 +354,54 @@ html {
   text-decoration: none;
 }
 
-
-/* RESPONSIVE */
+/* Responsive */
 
 @media (max-width: 900px) {
+  .story-page {
+    padding: 2.2rem 1.5rem 2.6rem;
+    margin: 1.8rem 0 2.8rem;
+    border-radius: 24px;
+  }
+
   .story-hero {
     grid-template-columns: 1fr;
-    gap: 1.6rem;
+    gap: 1.7rem;
   }
 
   .story-meta {
+    padding: 0.9rem 1.1rem;
+  }
+
+  .story-scenes-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .story-rail {
+    position: static;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.7rem 1.6rem;
+    gap: 0.5rem 1.1rem;
+  }
+
+  .story-rail-list::before {
+    display: none;
+  }
+
+  .story-rail-item {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .story-rail-item::before {
+    display: none;
+  }
+
+  .scene {
+    padding: 1.4rem 1.3rem 1.6rem;
   }
 
   .scene-grid {
     grid-template-columns: 1fr;
-  }
-
-  .scene {
-    padding: 1.3rem 1.2rem 1.4rem;
   }
 }
