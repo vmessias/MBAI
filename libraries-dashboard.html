@@ -124,19 +124,20 @@
     </section>
 
     <!-- SECTION: DESIGN RATIONALE -->
-    <section class="section">
-      <header class="section-head">
-        <h2>Design rationale</h2>
-      </header>
-      <div class="section-body two-col">
-        <p>
-          The layout separates controls and normalized KPIs on the left from visual views on the right, encouraging readers to think in terms of per‑resident investment rather than raw totals. A single conceptual filter state controls all views, so funding, equity, and long‑term trends stay in sync.
-        </p>
-        <p>
-          Each visualization encodes one of the main EDA findings: skewness and outliers (scatter), hidden leaders when we normalize by population (ranking), the divergence between rising funding and shrinking physical circulation (index chart), and the extent to which the mean can misrepresent typical libraries (gap plot).
-        </p>
-      </div>
-    </section>
+<section class="section">
+  <header class="section-head">
+    <h2>Visualizing Structural Divergence</h2>
+  </header>
+  <div class="section-body two-col">
+    <p>
+      <strong>Why dark mode?</strong> The dark interface isn't just aesthetic; it reduces glare when scanning dense scatterplots and high-contrast trend lines, focusing attention strictly on the data points that deviate from the norm (the "outliers").
+    </p>
+    <p>
+      <strong>Color as signal:</strong> Instead of a neutral palette, the dashboard uses a "warning" spectrum (orange/red) to highlight areas of financial erosion and efficiency shocks. Segments are color-coded consistently across all views—green for wealthy outliers, red/yellow for vulnerable systems—to help the eye track disparities from the scatterplot to the longitudinal trends without relearning the legend.
+    </p>
+  </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer class="footer">
