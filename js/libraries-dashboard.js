@@ -56,7 +56,7 @@ function renderScatterSystems(systems, state) {
 
   const sizeScale = d3.scaleSqrt()
     .domain([0, d3.max(systems, d => d.muni_dependency)])
-    .range([3, 20]);
+    .range([2, 12]);
 
   svg.append("g")
     .attr("transform", `translate(0,${height})`)
@@ -93,7 +93,8 @@ function renderScatterSystems(systems, state) {
     .style("font-size", "12px")
     .style("pointer-events", "none")
     .style("opacity", 0)
-    .style("border", "1px solid rgba(148,163,184,0.6)");
+    .style("border", "1px solid rgba(148,163,184,0.6)")
+    .style("z-index", 1000);
 
   svg.selectAll("circle")
     .data(systems)
@@ -141,7 +142,7 @@ function renderFundingIllusion(funding, state) {
     .range([0, width]);
 
   const yScale = d3.scaleLinear()
-    .domain([0, d3.max(funding, d => Math.max(d.nominal_per_capita, d.real_per_capita))])
+    .domain([25, 70])
     .range([height, 0]);
 
   svg.append("g")
@@ -267,6 +268,17 @@ function renderCostIndex(cost, state) {
     .attr("fill", COLORS.orange);
 
   const lastPoint = cost[cost.length - 1];
+  
+  // Ajuste: Anotação do pico COVID
+  const peak = cost.reduce((a, b) => a.cost_index_2002_100 > b.cost_index_2002_100 ? a : b);
+  svg.append("text")
+    .attr("x", xScale(peak.year) + 8)
+    .attr("y", yScale(peak.cost_index_2002_100))
+    .attr("fill", COLORS.red)
+    .style("font-size", "11px")
+    .style("font-weight", "bold")
+    .text(`COVID Shock: ${peak.cost_index_2002_100.toFixed(0)}x`);
+
   svg.append("text")
     .attr("x", xScale(lastPoint.year) + 5)
     .attr("y", yScale(lastPoint.cost_index_2002_100))
@@ -281,7 +293,7 @@ function renderSegmentTrends(segTrends, state) {
   const container = d3.select("#viz-metrics-gap");
   container.selectAll("*").remove();
 
-  const margin = { top: 20, right: 100, bottom: 50, left: 70 };
+  const margin = { top: 20, right: 140, bottom: 50, left: 70 };
   const width = container.node().getBoundingClientRect().width - margin.left - margin.right;
   const height = 350 - margin.top - margin.bottom;
 
@@ -331,7 +343,7 @@ function renderSegmentTrends(segTrends, state) {
       .attr("fill", COLORS.segments[segment] || COLORS.gray)
       .style("font-size", "11px")
       .style("font-weight", "bold")
-      .text(segment);
+      .text(segment.toUpperCase());
   });
 }
 
