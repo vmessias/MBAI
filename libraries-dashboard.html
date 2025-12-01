@@ -50,57 +50,24 @@
       </header>
 
       <div class="dash-layout">
-        <!-- LEFT: FILTERS & KPIs -->
+        <!-- LEFT: KEY FINDINGS (Updated to match data) -->
         <aside class="dash-sidebar">
-          <div class="panel panel-filters">
-            <h3>Filters</h3>
-            <div class="filter-group">
-              <label>Year</label>
-              <div class="pill-row">
-                <span class="pill pill-active">2024</span>
-                <span class="pill">2019</span>
-                <span class="pill">2014</span>
-                <span class="pill">1999</span>
-              </div>
-            </div>
-            <div class="filter-group">
-              <label>Region</label>
-              <div class="pill-row">
-                <span class="pill pill-active">All</span>
-                <span class="pill">Central</span>
-                <span class="pill">Eastern</span>
-                <span class="pill">Northern</span>
-                <span class="pill">Western</span>
-                <span class="pill">Toronto</span>
-              </div>
-            </div>
-            <div class="filter-group">
-              <label>Population band</label>
-              <div class="pill-row">
-                <span class="pill pill-active">&gt; 5k</span>
-                <span class="pill">5k–50k</span>
-                <span class="pill">50k–250k</span>
-                <span class="pill">&gt; 250k</span>
-              </div>
-            </div>
-          </div>
-
           <div class="panel panel-kpis">
-            <h3>Normalized KPIs</h3>
+            <h3>Key Findings</h3>
             <div class="kpi">
-              <span class="kpi-label">Revenue per capita</span>
-              <span class="kpi-value">$59</span>
-              <span class="kpi-note">Ontario average, 2024.</span>
+              <span class="kpi-label">Fiscal Gap</span>
+              <span class="kpi-value">$21</span>
+              <span class="kpi-note">Real per capita funding loss since 2002.</span>
             </div>
             <div class="kpi">
-              <span class="kpi-label">Top outlier</span>
-              <span class="kpi-value">Thornbury</span>
-              <span class="kpi-note">Revenue per capita ≈ 2.5× the provincial average.</span>
+              <span class="kpi-label">Efficiency Shock</span>
+              <span class="kpi-value">3.7x</span>
+              <span class="kpi-note">Spike in cost-per-visit during pandemic closures.</span>
             </div>
             <div class="kpi">
-              <span class="kpi-label">Circulation per resident</span>
-              <span class="kpi-value">↓ vs 1999</span>
-              <span class="kpi-note">Traditional loans at a multi‑decade low despite higher funding.</span>
+              <span class="kpi-label">Wealthiest Segment</span>
+              <span class="kpi-value">Outliers</span>
+              <span class="kpi-note">Small, wealthy towns spend 2x more per capita.</span>
             </div>
           </div>
         </aside>
@@ -108,55 +75,47 @@
         <!-- RIGHT: MAIN VIEWS -->
         <div class="dash-main">
 
-          <!-- VIEW 1: FUNDING VS POPULATION -->
+          <!-- VIEW 1: SCATTER -->
           <section class="view view-scatter">
             <header class="view-head">
-              <h3>Funding vs population</h3>
-              <p>Scatterplot showing the “Toronto effect” and regional clusters. Hovering a point reveals system name, population, total revenue, and revenue per capita.</p>
+              <h3>The Four Realities: Segmentation Analysis</h3>
+              <p>Clustering libraries by population and expenditure reveals four distinct operating realities: Urban Systems, Vulnerable centers, Insolvent rural libraries, and Wealthy Outliers.</p>
             </header>
             <div class="view-body">
-              <div id="viz-funding-scatter" class="viz-placeholder">
-                <span>Scatter · Population × Total current revenue</span>
-              </div>
+              <div id="viz-funding-scatter" class="viz-placeholder"></div>
             </div>
           </section>
 
-          <!-- VIEW 2: REVENUE PER CAPITA RANKING -->
-          <section class="view view-bar">
+          <!-- VIEW 2: FUNDING ILLUSION -->
+          <section class="view view-line">
             <header class="view-head">
-              <h3>Who is funded above average?</h3>
-              <p>Ranked bar chart of revenue per capita, filtered by population band, highlighting systems that receive far more (or less) than the provincial norm.</p>
+              <h3>The Funding Illusion</h3>
+              <p>Nominal municipal support has risen steadily (dotted line), but after adjusting for inflation (red line), real purchasing power per resident has stagnated or fallen since 2002.</p>
             </header>
             <div class="view-body">
-              <div id="viz-revenue-ranking" class="viz-placeholder">
-                <span>Bars · Revenue per capita (Top 15)</span>
-              </div>
+              <div id="viz-revenue-ranking" class="viz-placeholder"></div>
             </div>
           </section>
 
-          <!-- VIEW 3: 25-YEAR INDEX -->
-          <section class="view view-index">
+          <!-- VIEW 3: COST INDEX -->
+          <section class="view view-line">
             <header class="view-head">
-              <h3>25 years of change</h3>
-              <p>Index line chart (1999 = 100) comparing the trajectories of revenue, population, and traditional circulation to show how money and use have drifted apart.</p>
+              <h3>The Efficiency Shock</h3>
+              <p>Cost per visit remained stable for decades until the pandemic shock. While recovering, the cost structure has not fully returned to the pre-2019 baseline.</p>
             </header>
             <div class="view-body">
-              <div id="viz-index-lines" class="viz-placeholder">
-                <span>Index lines · Revenue, circulation, population</span>
-              </div>
+              <div id="viz-index-lines" class="viz-placeholder"></div>
             </div>
           </section>
 
-          <!-- VIEW 4: WHEN MEAN LIES -->
-          <section class="view view-dot">
+          <!-- VIEW 4: SEGMENT TRENDS -->
+          <section class="view view-line">
             <header class="view-head">
-              <h3>When the mean lies</h3>
-              <p>Dot plot showing how far the mean sits above the median for key metrics; values are expressed as “× median” to emphasize skewness.</p>
+              <h3>Diverging Fortunes</h3>
+              <p>Real expenditure trends show a widening gap: Wealthy Outliers (green) maintain high spending, while Insolvent (red) and Vulnerable (yellow) systems face slow erosion.</p>
             </header>
             <div class="view-body">
-              <div id="viz-metrics-gap" class="viz-placeholder">
-                <span>Dots · Mean ÷ Median (×)</span>
-              </div>
+              <div id="viz-metrics-gap" class="viz-placeholder"></div>
             </div>
           </section>
 
