@@ -1,4 +1,6 @@
-/* GLOBAL – PALETA DRAMÁTICA: AZUL NOITE + LARANJA DE ALERTA */
+/* ========= LIBRARIES DASHBOARD ========= */
+
+/* Base */
 
 *,
 *::before,
@@ -9,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at top left, #1F2937 0%, #020617 55%, #000000 100%);
+  background: radial-gradient(circle at top left, #020617 0%, #020617 55%, #000000 100%);
   color: #E5E7EB;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
@@ -21,7 +23,7 @@ body {
   padding: 3.2rem 6vw 3.6rem;
 }
 
-/* CROSS-BROWSER */
+/* Cross‑browser */
 
 html {
   scroll-behavior: smooth;
@@ -29,7 +31,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* HERO – TÍTULO CINEMATOGRÁFICO */
+/* Hero */
 
 .hero {
   display: grid;
@@ -62,7 +64,7 @@ html {
 
 .hero-deck {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   color: #E5E7EB;
   max-width: 40rem;
   opacity: 0.9;
@@ -72,7 +74,7 @@ html {
   font-size: 0.8rem;
   color: #CBD5F5;
   align-self: flex-start;
-  background: rgba(15,23,42,0.9);
+  background: rgba(15,23,42,0.94);
   padding: 1.4rem 1.5rem;
   border-radius: 1.1rem;
   border: 1px solid rgba(148,163,184,0.6);
@@ -92,7 +94,7 @@ html {
   font-weight: 600;
 }
 
-/* SECTIONS */
+/* Sections */
 
 .section {
   margin-top: 3.4rem;
@@ -107,7 +109,7 @@ html {
 
 .section-head h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin: 0;
   color: #F9FAFB;
 }
@@ -120,9 +122,9 @@ html {
 }
 
 .section-body {
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   color: #E5E7EB;
-  background: radial-gradient(circle at top left, rgba(15,23,42,0.98), rgba(15,23,42,0.92));
+  background: rgba(15,23,42,0.96);
   padding: 1.7rem 1.8rem 1.8rem;
   border-radius: 1.2rem;
   border-left: 3px solid #F97316;
@@ -139,7 +141,7 @@ html {
   gap: 1.8rem;
 }
 
-/* DASHBOARD LAYOUT */
+/* Dashboard layout */
 
 .dash-layout {
   display: grid;
@@ -148,7 +150,7 @@ html {
   align-items: flex-start;
 }
 
-/* PANELS LATERAIS */
+/* Sidebar panels */
 
 .dash-sidebar {
   display: flex;
@@ -234,7 +236,7 @@ html {
   margin-top: 0.2rem;
 }
 
-/* MAIN VIEWS */
+/* Main views */
 
 .dash-main {
   display: flex;
@@ -243,7 +245,7 @@ html {
 }
 
 .view {
-  background: radial-gradient(circle at top left, #020617, #020617 35%, #020617 100%);
+  background: radial-gradient(circle at top left, #020617, #020617 45%, #111827 100%);
   border-radius: 1.25rem;
   border: 1px solid rgba(55,65,81,0.9);
   box-shadow: 0 18px 45px rgba(0,0,0,0.85);
@@ -268,7 +270,7 @@ html {
   margin-top: 1.1rem;
 }
 
-/* PLACEHOLDER DOS GRÁFICOS */
+/* Viz placeholders */
 
 .viz-placeholder {
   border-radius: 1rem;
@@ -285,7 +287,7 @@ html {
   color: #9CA3AF;
 }
 
-/* FOOTER */
+/* Footer */
 
 .footer {
   margin-top: 3.4rem;
@@ -300,7 +302,7 @@ html {
   text-decoration: none;
 }
 
-/* RESPONSIVE */
+/* Responsive */
 
 @media (max-width: 900px) {
   .page {
