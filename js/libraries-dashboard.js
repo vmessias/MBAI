@@ -120,6 +120,30 @@ function renderScatterSystems(systems, state) {
     .on("mouseout", () => {
       tooltip.transition().duration(200).style("opacity", 0);
     });
+    
+  
+  const legend = svg.append("g")
+    .attr("transform", `translate(${width - 140}, 10)`) 
+    .style("font-size", "11px");
+
+  const categories = Object.keys(COLORS.segments);
+
+  categories.forEach((cat, i) => {
+    const row = legend.append("g")
+      .attr("transform", `translate(0, ${i * 18})`); 
+
+    row.append("circle")
+      .attr("r", 4)
+      .attr("fill", COLORS.segments[cat])
+      .attr("opacity", 0.8);
+
+    row.append("text")
+      .attr("x", 10)
+      .attr("y", 4)
+      .style("fill", "#9CA3AF")
+      .text(cat);
+  });
+
 }
 
 /* VIEW 2: Line - Funding Illusion */
