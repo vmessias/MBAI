@@ -313,12 +313,12 @@ function renderCostIndex(cost, state) {
     .text(`${lastPoint.cost_index_2002_100.toFixed(0)}`);
 }
 
-/* VIEW 4: Segment trends */
+/* VIEW 4: Segment trends - COM LEGENDA FIXA */
 function renderSegmentTrends(segTrends, state) {
   const container = d3.select("#viz-metrics-gap");
   container.selectAll("*").remove();
 
-  const margin = { top: 20, right: 140, bottom: 50, left: 70 };
+  const margin = { top: 40, right: 40, bottom: 50, left: 70 };
   const width = container.node().getBoundingClientRect().width - margin.left - margin.right;
   const height = 350 - margin.top - margin.bottom;
 
@@ -353,24 +353,37 @@ function renderSegmentTrends(segTrends, state) {
 
   segments.forEach(segment => {
     const segmentData = segTrends.filter(d => d.segment === segment);
-
+    
     svg.append("path")
       .datum(segmentData)
       .attr("fill", "none")
       .attr("stroke", COLORS.segments[segment] || COLORS.gray)
       .attr("stroke-width", 2.5)
       .attr("d", line);
+  });
 
-    const lastPoint = segmentData[segmentData.length - 1];
-    svg.append("text")
-      .attr("x", xScale(lastPoint.year) + 5)
-      .attr("y", yScale(lastPoint.real_exp_per_capita))
-      .attr("fill", COLORS.segments[segment] || COLORS.gray)
-      .style("font-size", "11px")
-      .style("font-weight", "bold")
-      .text(segment.toUpperCase());
+  // LEGENDA FIXA NO TOPO
+  const legend = svg.append("g")
+    .attr("transform", `translate(0, -25)`); 
+
+  segments.forEach((cat, i) => {
+    const col = legend.append("g")
+      .attr("transform", `translate(${i * 130}, 0)`); 
+
+    col.append("circle")
+      .attr("r", 4)
+      .attr("fill", COLORS.segments[cat]);
+
+    col.append("text")
+      .attr("x", 8)
+      .attr("y", 4)
+      .style("fill", "#D1D5DB")
+      .style("font-size", "10px")
+      .style("font-weight", "600")
+      .text(cat.toUpperCase());
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   const state = {};
