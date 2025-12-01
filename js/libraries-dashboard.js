@@ -302,7 +302,7 @@ function renderCostIndex(cost, state) {
     .attr("text-anchor", "end") 
     .style("font-size", "11px")
     .style("font-weight", "bold")
-    .text(`COVID Shock: ${peak.cost_index_2002_100.toFixed(0)}x`);
+    .text(`COVID Shock: ${peak.cost_index_2002_100.toFixed(0)}`);
 
   svg.append("text")
     .attr("x", xScale(lastPoint.year) + 5)
