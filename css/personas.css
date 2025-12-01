@@ -368,9 +368,7 @@ body {
 }
 
 
-/* OVERRIDES FINAIS – AJUSTE FINO */
-
-/* Header com mais respiro */
+/* AJUSTES FINAIS */
 .main-content.personas-main {
   padding: 4.5rem 10vw 5rem;
   background: linear-gradient(180deg, #F7F9FC 0%, #F2F4F9 100%);
@@ -383,12 +381,10 @@ body {
   border-bottom: 1px solid #E1E6F0;
 }
 
-/* Linha vertical alinhada atrás do número */
 .personas-process-flow::before {
   left: 60px;
 }
 
-/* Grid do passo: número à esquerda, caixa branca à direita */
 .process-stage {
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
@@ -396,14 +392,11 @@ body {
   align-items: flex-start;
 }
 
-/* “Pílula” do número separada */
 .stage-label {
   position: relative;
   z-index: 1;
   margin-top: 0.4rem;
 }
-
-/* Caixa branca que envolve imagem + texto */
 .stage-body {
   position: relative;
   z-index: 0;
@@ -414,7 +407,6 @@ body {
   border: 1px solid #E2E8F0;
 }
 
-/* Imagem do Miro/card bem dentro da caixa */
 .stage-figure {
   width: 100%;
 }
