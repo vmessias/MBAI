@@ -192,7 +192,7 @@ html {
     .scroll-indicator { bottom: 2rem; }
 }
 
-/* ==================== PROSE (Text sections) ==================== */
+/* ==================== */
 .prose, .prose-transition {
     max-width: 640px;
     margin: 4rem auto;
@@ -217,7 +217,7 @@ html {
     color: var(--color-accent);
 }
 
-/* ==================== INTRO SECTION ==================== */
+/* ==================== INTRO  ==================== */
 #intro {
     background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
     padding: 6rem 2rem 4rem;
@@ -380,7 +380,7 @@ html {
     text-shadow: 2px 2px 0px rgba(255,255,255,1);
 }
 
-/* Props (Banner) */
+/*  (Banner) */
 .intro-prop {
     position: absolute;
     z-index: 5;
