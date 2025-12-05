@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
 }
 
-/* ==================== CROSS-BROWSER FIXES ==================== */
+/* ==================== quebrou no SAFARI, validar depois */
 @supports not (aspect-ratio: 1 / 1) {
   .photo-frame {
     height: 370px;
@@ -36,10 +36,8 @@ html {
   font-size: clamp(3.1rem, 4.6vw, 3.9rem);
 }
 .projects-track {
-  -webkit-overflow-scrolling: touch; /* Safari iOS */
+  -webkit-overflow-scrolling: touch; 
 }
-
-/* PAGE LAYOUT */
 
 .page {
   display: grid;
@@ -98,9 +96,6 @@ html {
 .main-content {
   padding: 3rem 7vw 4rem 7vw;
 }
-
-
-/* HERO */
 
 .hero {
   display: grid;
@@ -211,9 +206,6 @@ html {
   text-align: left;
 }
 
-
-/* LEDE STRIP */
-
 .lede {
   margin-top: 0.5rem;
   border-bottom: 1px solid #D7DCEE;
@@ -228,9 +220,6 @@ html {
   color: #151A26;
   line-height: 1.8;
 }
-
-
-/* SECTION HEADERS */
 
 .section-head {
   display: flex;
@@ -253,9 +242,6 @@ html {
   color: #6C7691;
 }
 
-
-/* ABOUT */
-
 .about-grid {
   display: grid;
   grid-template-columns: 1.3fr 1.1fr;
@@ -270,7 +256,7 @@ html {
 }
 
 
-/* PROJECTS – CAROUSEL */
+/* esta cortando quando dá hoover */
 
 .projects-intro {
   margin-top: 4rem;
@@ -408,9 +394,6 @@ html {
   font-weight: 600;
 }
 
-
-/* PERSONAS – GRID & CARDS */
-
 .personas-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
@@ -472,7 +455,7 @@ html {
 }
 
 
-/* PERSONAS – PROCESS FLOW */
+/* tudo misturado, precisa separar */
 
 .personas-process-flow {
   margin-top: 3.2rem;
@@ -582,9 +565,6 @@ html {
   box-shadow: none;
 }
 
-
-/* PERSONAS – IMPACT BLOCK */
-
 .personas-impact {
   margin-top: 3.2rem;
   padding: 2rem;
@@ -610,9 +590,6 @@ html {
   margin-bottom: 0;
 }
 
-
-/* FOOTER */
-
 .footer {
   margin-top: 2.5rem;
   padding-top: 1rem;
@@ -626,8 +603,6 @@ html {
   text-decoration: none;
 }
 
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .page {
