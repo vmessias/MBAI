@@ -1,7 +1,4 @@
 /* ========= LIBRARIES DASHBOARD ========= */
-
-/* Base */
-
 *,
 *::before,
 *::after {
@@ -23,15 +20,11 @@ body {
   padding: 3.2rem 6vw 3.6rem;
 }
 
-/* Cross‑browser */
-
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Hero */
 
 .hero {
   display: grid;
@@ -93,9 +86,6 @@ html {
   color: #F97316;
   font-weight: 600;
 }
-
-/* Sections */
-
 .section {
   margin-top: 3.4rem;
 }
@@ -141,17 +131,12 @@ html {
   gap: 1.8rem;
 }
 
-/* Dashboard layout */
-
 .dash-layout {
   display: grid;
   grid-template-columns: minmax(260px, 1.25fr) minmax(0, 2.1fr);
   gap: 2.4rem;
   align-items: flex-start;
 }
-
-/* Sidebar panels */
-
 .dash-sidebar {
   display: flex;
   flex-direction: column;
@@ -236,8 +221,6 @@ html {
   margin-top: 0.2rem;
 }
 
-/* Main views */
-
 .dash-main {
   display: flex;
   flex-direction: column;
@@ -270,8 +253,6 @@ html {
   margin-top: 1.1rem;
 }
 
-/* Viz placeholders */
-
 .viz-placeholder {
   border-radius: 1rem;
   border: 1px dashed rgba(148,163,184,0.8);
@@ -287,8 +268,6 @@ html {
   color: #9CA3AF;
 }
 
-/* Footer */
-
 .footer {
   margin-top: 3.4rem;
   padding-top: 1rem;
@@ -301,8 +280,6 @@ html {
   color: #F97316;
   text-decoration: none;
 }
-
-/* Responsive */
 
 @media (max-width: 900px) {
   .page {
