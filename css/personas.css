@@ -1,6 +1,4 @@
-/* ========= PERSONAS PAGE ONLY ========= */
-
-/* Base */
+/* ========= PERSONAS PAGE ========= */
 
 body {
   margin: 0;
@@ -19,8 +17,6 @@ body {
   grid-template-columns: 80px minmax(0, 1fr);
   min-height: 100vh;
 }
-
-/* Side nav */
 
 .side-nav {
   border-right: 1px solid rgba(255,255,255,0.08);
@@ -71,8 +67,6 @@ body {
   opacity: 1;
 }
 
-/* Main wrapper */
-
 .main-content.personas-main {
   padding: 4.5rem 10vw 5rem;
   background:
@@ -83,8 +77,6 @@ body {
     0 28px 80px rgba(15, 23, 42, 0.18),
     0 0 0 1px rgba(255,255,255,0.6);
 }
-
-/* Header */
 
 .personas-head {
   display: flex;
@@ -129,9 +121,6 @@ body {
   color: #2A2F3A;
   margin-bottom: 5rem;
 }
-
-/* Process – timeline vertical */
-
 .personas-process-flow {
   margin-top: 3.2rem;
   margin-bottom: 4rem;
@@ -264,8 +253,6 @@ body {
   opacity: 0.7;
 }
 
-/* Grid das quatro personas */
-
 .personas-grid-section {
   margin-top: 3.5rem;
 }
@@ -280,7 +267,7 @@ body {
   gap: 2rem;
   margin: 3.5rem 0;
 }
-
+/* preciso revisitar esse card */
 .persona-card {
   background: linear-gradient(135deg, #FFFFFF 0%, #F5F3EE 100%);
   border: 1px solid #E0D8C8;
@@ -349,7 +336,7 @@ body {
   margin-top: 0.4rem;
 }
 
-/* Impact block */
+/* as personas estão estourando o card */
 
 .personas-impact {
   margin-top: 3.2rem;
@@ -376,9 +363,6 @@ body {
 .personas-impact p:last-child {
   margin-bottom: 0;
 }
-
-/* Footer */
-
 .footer {
   margin-top: 2.5rem;
   padding-top: 1rem;
@@ -391,8 +375,6 @@ body {
   color: #1C3F76;
   text-decoration: none;
 }
-
-/* Responsive */
 
 @media (max-width: 900px) {
   .page {
